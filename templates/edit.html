@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+
+<body>
+    <h1>#Edite sua task#</h1>
+
+    <form action="/edit/{{task_id}}" method="POST">
+        <ul>
+            <input class="" type="text" name="name" value="{{todo.name if todo else ''}}">
+        </ul>
+
+        <button class="btn btn-primary" type="submit">Salvar</button>
+
+    </form>
+</body>
+
+</html>
