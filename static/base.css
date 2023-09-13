@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {}
+
+button {
+    margin-left: 10px;
+}
+
+tbody {}
+
+td {
+    padding: .7em;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+}
+
+table {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,5 +1,5 @@
 import json
-from flask import render_template, Blueprint, request, redirect, flash, url_for
+from flask import render_template, Blueprint, request, redirect, url_for
 
 from database.models import Todo
 from database.database import Database, select
@@ -33,6 +33,8 @@ def edit(task_id):
     if data := request.form:
         task.name = data["name"]
         Database().run_insert(task)
+        return redirect("/")
+
     return render_template("edit.html", todo=task)
 
 
